@@ -1,0 +1,516 @@
+/* CSS Reset */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Default for small screens, Media queries for desktop at the end. */
+
+body {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+html {
+    background: url('../img/stars3.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    color: yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid yellow;
+    margin: 20px;
+    padding: 20px;
+}
+
+h2 {
+    color: yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: yellow;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    color: yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 769px) {
+
+    /* For screens larger than 769px: */
+    h1 {
+        color: yellow;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4rem;
+        text-transform: uppercase;
+        border-bottom: 3px solid yellow;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h2 {
+        color: yellow;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: yellow;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    #rules {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        width: 900px;
+        margin: -500px -450px;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "Header Header Header"
+            "Left1 Middle1 Right1"
+            "Back Back Back";
+    }
+
+    #rule-0 {
+        grid-area: Header;
+    }
+
+    #rule-1 {
+        grid-area: Left1;
+        height: 300px;
+        margin: 10px;
+        border: 3px solid yellow;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    #rule-2 {
+        grid-area: Middle1;
+        margin: 10px;
+        border: 3px solid yellow;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    #rule-3 {
+        grid-area: Right1;
+        margin: 10px;
+        border: 3px solid yellow;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    #back-2 {
+        grid-area: Back;
+        text-align: center;
+        color: yellow;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        border: 3px solid yellow;
+        background-color: transparent;
+        margin: 5px;
+        border-radius: 15px 15px 15px 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: black;
+        width: 100px;
+        height: 50px;
+        left: 50%;
+        margin: 0px -50px;
+        position: absolute;
+    }
+}
+
+#music-play,
+#music-pause {
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    font-size: 36px;
+    color: yellow;
+}
+
+#music-play:hover,
+#music-pause:hover {
+    color: orange;
+}
+
+#grid-menu {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: -100px -100px;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "Top"
+        "Bottom";
+}
+
+#grid-player-details {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: -100px -100px;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "Top"
+        "."
+        "Middle"
+        "."
+        "Bottom"
+        "."
+        "Back";
+}
+
+#userAge,
+#userName {
+    text-align: center;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: 3px solid yellow;
+    grid-area: Top;
+    background-color: transparent;
+    padding: 0px 10px 0px 10px;
+    margin: 5px;
+    background-color: transparent;
+}
+
+#userAge {
+    grid-area: Middle;
+}
+
+#rule-0 {
+    grid-area: Header;
+}
+
+#rule-1 {
+    margin: 10px;
+    border: 3px solid yellow;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#rule-2 {
+    margin: 10px;
+    border: 3px solid yellow;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#rule-3 {
+    margin: 10px;
+    border: 3px solid yellow;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#back-2 {
+    text-align: center;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: 3px solid yellow;
+    background-color: transparent;
+    margin: 5px;
+    border-radius: 15px 15px 15px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    left: 50%;
+    margin: 0px -50px;
+    position: absolute;
+}
+
+#play {
+    grid-area: Bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    background-color: transparent;
+    height: 80px;
+    width: 200px;
+    color: yellow;
+    border: 3px solid yellow;
+    margin: 5px;
+    border-radius: 40px 40px 40px 40px;
+    text-transform: uppercase;
+}
+
+#restore,
+#save,
+#restart,
+#back {
+    grid-area: Back;
+    text-align: center;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: 3px solid yellow;
+    background-color: transparent;
+    margin: 5px;
+    border-radius: 15px 15px 15px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: black;
+}
+
+#restore,
+#restart {
+    padding: 5px;
+    top: 0px;
+    right: 0px;
+    margin: 10px;
+    position: absolute;
+    width: 100px;
+}
+
+#save {
+    padding: 5px;
+    top: 40px;
+    right: 0px;
+    margin: 10px;
+    position: absolute;
+    width: 100px;
+}
+
+#div-scoreStats {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 900px;
+    margin: -300px -600px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". top top"
+        "level right left"
+        ". bottom bottom";
+}
+
+.main-title {
+    margin: 10px;
+    border: 3px solid yellow;
+    border-radius: 15px 15px 15px 15px;
+    grid-area: top;
+}
+
+.div-hits {
+    margin: 10px;
+    border: 3px solid yellow;
+    border-radius: 15px 15px 15px 15px;
+    grid-area: right;
+}
+
+.div-misses {
+    margin: 10px;
+    border: 3px solid yellow;
+    border-radius: 15px 15px 15px 15px;
+    grid-area: left;
+}
+
+.div-age {
+    margin: 10px;
+    border: 3px solid yellow;
+    border-radius: 15px 15px 15px 15px;
+    grid-area: bottom;
+}
+
+.div-levels {
+    margin: 10px;
+    grid-area: level;
+}
+
+.div-levels h3 {
+    text-align: right;
+}
+
+.topborder {
+    border-top: 3px solid yellow;
+}
+
+.darken-bg {
+    height: 300px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    margin: -150px -200px;
+    position: absolute;
+    background-color: black;
+    border-radius: 25px 25px 25px 25px;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#grid-menu > input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    background-color: transparent;
+    height: 80px;
+    width: 200px;
+    color: yellow;
+    border: 3px solid yellow;
+    margin: 5px;
+    border-radius: 40px 40px 40px 40px;
+    text-transform: uppercase;
+}
+
+#start {
+    grid-area: Top;
+}
+
+#rulesBut {
+    grid-area: Bottom;
+}
+
+#restore:hover,
+#save:hover,
+#restart:hover,
+#back:hover,
+#play:hover,
+#start:hover,
+#rulesBut:hover {
+    color: orange;
+    border: 3px solid orange;
+}
+
+#div-game {
+    background: black;
+}
+
+.mathBox-cursor {
+    background: url('../img/xwing.png');
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+#mathBox-question {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    border: 3px solid red;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.balloon-answer,
+.balloon-wrong {
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+.balloon-but {
+    width: 150px;
+    height: 150px;
+    font-size: 3.5rem;
+    color: red;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px;
+}
+
+.balloon-but:hover {
+    background: rgba(100%, 0%, 20%, .5);
+    border-radius: 100px 100px 100px 100px;
+}
+
+#div-balloon-correct {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 3px solid red;
+    border-radius: 100px 100px 100px 100px;
+}
+
+#div-wrong-balloons > div {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 3px solid red;
+    border-radius: 100px 100px 100px 100px;
+}
+
+#minutes,
+#seconds {
+    width: 30px;
+    border: none;
+    font-size: 1.5rem;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+    font-weight: bold;
+    text-align: right;
+}
+
+#div-scoreBoard {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+#div-scoreBoard p {
+    position: relative;
+    top: auto;
+    margin: 5px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+#div-scoreBoard span {
+    font-size: 1.5rem;
+}

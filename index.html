@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Math Game</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <button id="music-play"><i id="music-play-icon" class="fas fa-volume-up"></i></button>
+    <button id="music-pause"><i id="music-pause-icon" class="fas fa-volume-mute"></i></button>
+    <input id="restart" type="button" value="Restart">
+    <input id="save" type="button" value="Save">
+    <input id="restore" type="button" value="Restore">
+    <div id="div-introPage">
+        <div id="grid-menu">
+            <input id="start" type="button" value="start">
+            <input id="rulesBut" type="button" value="rules">
+        </div>
+        <h1>Math Wars</h1>
+        <h2>May the math be with you</h2>
+        <div class="darken-bg"></div>
+    </div>
+    <div id="div-rules">
+        <div id="bg-rules"></div>
+        <div id="rules">
+            <div id="rule-0">
+                <h1>Rules</h1>
+            </div>
+            <div id="rule-1">
+                <h2>Level 1:</h2>
+                <h2>Addition</h2>
+                <br>
+                <p>The objective is to add two numbers together.</p>
+                <br>
+                <p>e.g. 1 + 1 = 2</p>
+            </div>
+            <div id="rule-2">
+                <h2>Level 2:</h2>
+                <h2>Subtraction</h2>
+                <br>
+                <p>The objective is find the difference between two numbers.</p>
+                <br>
+                <p>e.g. 12 - 2 = 10</p>
+            </div>
+            <div id="rule-3">
+                <h2>Level 3:</h2>
+                <h2>Division</h2>
+                <br>
+                <p>The objective is find the difference between two numbers.</p>
+                <br>
+                <p>e.g. 10 / 2 = 5</p>
+            </div>
+            <input id="back-2" type="button" value="Back">
+        </div>
+
+    </div>
+    <div id="div-playerDetails">
+        <div id="grid-player-details">
+            <input id="userName" type="text" placeholder="NAME (optional)">
+            <input id="userAge" type="text" placeholder="AGE (optional)">
+            <input id="play" type="button" value="Play">
+            <input id="back" type="button" value="Back">
+            <div class="darken-bg"></div>
+        </div>
+    </div>
+    <div id="div-game">
+        <div id="div-scoreBoard">
+            <p>Round: <span id="round"></span></p>
+            <p>Score: <span id="score">0</span></p>
+            <p>Hits: <span id="hits">0</span></p>
+            <p>Misses: <span id="misses">0</span>/6</p>
+            <p>Time: <input id="minutes" type="text">:<input id="seconds" type="text"></p>
+        </div>
+        <div id="div-mathBox" class="mathBox-cursor">
+            <p id="mathBox-question" align="center"></p>
+        </div>
+        <div id="div-balloon-answer">
+        </div>
+        <div id="div-wrong-balloons">
+        </div>
+    </div>
+    <div id="div-scoreStats">
+        <div class="main-title">
+            <h2>Game over<span id="name_final" style="color:red;"></span>, your:</h2>
+            <br>
+            <h2>total score - <span id="score_final"></span></h2>
+        </div>
+        <div class="div-levels">
+            <br>
+            <br>
+            <h3>Addition:</h3>
+            <h3>Subtraction:</h3>
+            <h3>Division:</h3>
+        </div>
+        <div class="div-hits">
+            <h2>Hits</h2>
+            <h3><span id="hits_1"></span></h3>
+            <h3><span id="hits_2"></span></h3>
+            <h3><span id="hits_3"></span></h3>
+            <h2 class="topborder">total  - <span id="hits_final"></span></h2>
+        </div>
+        <div class="div-misses">
+            <h2>Misses</h2>
+            <h3><span id="misses_1"></span></h3>
+            <h3><span id="misses_2"></span></h3>
+            <h3><span id="misses_3"></span></h3>
+            <h2 class="topborder">total - <span id="misses_final"></span></h2>
+        </div>
+        <div class="div-age">
+            <h2>age - <span id="age_final"></span></h2>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
